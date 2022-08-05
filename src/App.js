@@ -7,7 +7,7 @@ import {
   Homepage,
   CryptoDetails,
   News,
-  Cryptocurriences,
+  Cryptocurrencies,
 } from "./components";
 import "./App.css";
 import "antd/dist/antd.css";
@@ -24,7 +24,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/exchanges" element={<Exchanges />} />
-              <Route path="/cryptocurriences" element={<Cryptocurriences />} />
+              <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
               <Route path="/crypto/:coinId" element={<CryptoDetails />} />
               <Route path="/news" element={<News />} />
             </Routes>
