@@ -2,6 +2,7 @@
   "name": "cryptoverse",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/bikkimahato/Cryptoverse",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@reduxjs/toolkit": "^1.8.3",
@@ -11,6 +12,7 @@
     "antd": "^4.22.3",
     "axios": "^0.27.2",
     "chart.js": "^3.9.0",
+    "gh-pages": "^4.0.0",
     "html-react-parser": "^3.0.1",
     "millify": "^5.0.0",
     "moment": "^2.29.4",
@@ -26,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
